@@ -13,5 +13,26 @@
 
 ### /analytics
 
-#### 包含庫
+#### 庫
+
+`<Sessions />` 最重要的是 `react-chartjs-2` 的用法
+
+1. [`chart.js`](https://www.chartjs.org/)
+2. [`react-chartjs-2 `](https://openbase.com/js/react-chartjs-2) =>  [example](https://reactchartjs.github.io/react-chartjs-2/#/) (只要在需要的時候，再從這裏 copy & paste 就好了)
+
+` <CountryReports />` 的中心思想就是把地圖展現出來，然後賦值給每個地區，可是用的是 `createRef` 直接控制 DOM，看看有沒有其他替代（容易）的方法
+
+1. 可以試試這個 [`google-map-react`](https://github.com/google-map-react/google-map-react#examples)
+2. 善於利用 [Google Maps Platform](https://developers.google.com/maps/)
+3. 國內還是使用 [`react-amap`](https://github.com/ElemeFE/react-amap) 高德地圖比較好
+
+
+
+- 要知道 `React.createRef()` 是做什麼的
+- color 是需要獨立放在 另外一個 config / util 的 file 裏最好
+
+## 其他
+
+1. `react-router-dom` 中 Route 的 `route.layout` 和 `route.component`
+2. [`react-ga`](https://github.com/react-ga/react-ga)
 
