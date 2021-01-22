@@ -1,6 +1,6 @@
 # React ToolBox
 
-根據公司購買的 [**Shards Dashboard Pro React**](https://designrevision.com/downloads/shards-dashboard-pro-react/) 套件，將其中每一個 View 都吃透它。具體做法就是對 Shards 使用到實用性爆表的庫都玩得很6。坦白說，這個套件只是一個懶人包，因爲要用 React 做出很好看的效果，還是要看自身的實力，`Shards` 只是加速了一些過程進度，譬如 `Styles`，`CSS`,  Flux 等。只能說這是一個高級付費版的 React 腳手架。可以學習的東西還是有很多的。MVC 結構就是其中之一。
+根據公司購買的 [**Shards Dashboard Pro React**](https://designrevision.com/downloads/shards-dashboard-pro-react/) 套件，將其中每一個 View 都吃透它。具體做法就是對 Shards 使用到實用性爆表的庫都玩得很6。坦白說，這個套件只是一個懶人包，因爲要用 React 做出很好看的效果，還是要看自身的實力，`Shards` 只是加速了一些過程進度，譬如 `Styles`，`CSS`,  `Flux` 等。只能說這是一個高級付費版的 React 腳手架。可以學習的東西還是有很多的。MVC 結構就是其中之一。
 
 因爲知識產權的問題（或者我猜我會因爲直接可能 push 付費的源碼而惹上官司），所以我只會在 toolbox 中從 0 自己寫一次就好了。
 
@@ -13,8 +13,6 @@
 
 ### /analytics
 
-#### 庫
-
 `<Sessions />` 最重要的是 `react-chartjs-2` 的用法
 
 1. [`chart.js`](https://www.chartjs.org/)
@@ -26,7 +24,15 @@
 2. 善於利用 [Google Maps Platform](https://developers.google.com/maps/)
 3. 國內還是使用 [`react-amap`](https://github.com/ElemeFE/react-amap) 高德地圖比較好
 
+### /onlineStore
 
+`<SalesReport />`  中無論是 `Datepicker` 還是 `ButtonGroup` ，中心思想都是 `onClick` 之後替換向 [react-chartjs-2](https://github.com/reactchartjs/react-chartjs-2) 引入的數據而已。
+
+### /editUserProfile
+
+[`react-tagsinput`](https://github.com/olahol/react-tagsinput) 可以參考使用。
+
+### 注意
 
 - 要知道 `React.createRef()` 是做什麼的
 - color 是需要獨立放在 另外一個 config / util 的 file 裏最好
